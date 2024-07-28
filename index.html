@@ -595,7 +595,7 @@
     </div>
     <div class="row">
       <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-        <a href="#" onclick="downloadFile()">Download Resume</a>
+        <a href="https://drive.google.com/uc?id=1DkY2o-qNFoE8lchKjr9wKuW70A_YBqr5" onclick="downloadFile()">Download Resume</a>
         <div class="icon"><i class="icofont-page"></i></div>
         <h4 class="title">Resume</h4>
         <p class="description" style="color:#fff;">The link contains my resume</p>
@@ -603,25 +603,6 @@
     </div>
   </div>
 </section> <!--End Links Section -->
-
-<script>
-  function downloadFile() {
-    var fileId = '1DkY2o-qNFoE8lchKjr9wKuW70A_YBqr5';
-    var fileName = 'resume.pdf';
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://drive.google.com/uc?id=' + fileId, true);
-    xhr.responseType = 'blob';
-    xhr.onload = function() {
-      var blob = xhr.response;
-      var link = document.createElement('a');
-      link.href = window.URL.createObjectURL(blob);
-      link.download = fileName;
-      link.click();
-    };
-    xhr.send();
-  }
-</script>
-
 
 
   <!-- Start Contact Section -->
